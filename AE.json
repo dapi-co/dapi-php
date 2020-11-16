@@ -1,0 +1,2297 @@
+{
+  "ABDIAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 32,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 32,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 32,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 32,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 105,
+          "line1": {
+            "required": true,
+            "length": 35,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": true,
+            "length": 35,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": true,
+            "length": 35,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "ADCBAEAA": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 30,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 102,
+          "line1": {
+            "required": true,
+            "length": 34,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 34,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 34,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 30,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 102,
+          "line1": {
+            "required": true,
+            "length": 34,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 34,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 34,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": true,
+          "length": 100,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 23,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 105,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "BBMEAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 24,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 24,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "BOMLAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "BOMLAEAD_N": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "CBDUAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 100,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": [
+            {
+              "type": "WORD_COUNT",
+              "value": 2
+            },
+            {
+              "type": "WORD_LENGTH",
+              "value": 50
+            }
+          ]
+        },
+        "nickname": {
+          "optional": true,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 50,
+          "line1": {
+            "required": true,
+            "length": 50,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 100,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": [
+            {
+              "type": "WORD_COUNT",
+              "value": 2
+            },
+            {
+              "type": "WORD_LENGTH",
+              "value": 50
+            }
+          ]
+        },
+        "nickname": {
+          "optional": true,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 50,
+          "line1": {
+            "required": true,
+            "length": 50,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "CITIAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 135,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 135,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "DUIBAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 140,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": [
+            {
+              "type": "WORD_COUNT",
+              "value": 2
+            }
+          ]
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 25,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "EBILAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 150,
+          "line1": {
+            "required": true,
+            "length": 150,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 20,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": true,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "EBILAEAD_L": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 20,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "FGBMAEAA": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 105,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 105,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "MEBLAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 50,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 80,
+          "line1": {
+            "required": false,
+            "length": 20,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 20,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 20,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 30,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "NBSHAEAS": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 80,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 80,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 80,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 80,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "NISLAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 55,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 12,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 55,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 110,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 110,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "NRAKAEAK": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 12,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 64,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 20,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 99,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 99,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  },
+  "SCBLAEAD": {
+    "createBeneficiary": {
+      "same": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 10,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 0,
+          "line1": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 0,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 12,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      },
+      "local": {
+        "name": {
+          "required": true,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z ]+",
+          "attributes": []
+        },
+        "nickname": {
+          "optional": true,
+          "length": 15,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "swiftCode": {
+          "required": true,
+          "length": 8,
+          "allowedCharacters": "[a-zA-Z]+"
+        },
+        "address": {
+          "length": 105,
+          "line1": {
+            "required": true,
+            "length": 35,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line2": {
+            "required": false,
+            "length": 35,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          },
+          "line3": {
+            "required": false,
+            "length": 35,
+            "allowedCharacters": "[a-zA-Z0-9 ]+"
+          }
+        },
+        "branchAddress": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "branchName": {
+          "required": false,
+          "length": 0,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "country": {
+          "required": false,
+          "length": 56,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        },
+        "phoneNumber": {
+          "required": false,
+          "length": 10,
+          "allowedCharacters": "[0-9]+"
+        },
+        "sortCode": {
+          "required": false,
+          "length": 8,
+          "allowedCharacters": ""
+        }
+      }
+    },
+    "createTransfer": {
+      "same": {
+        "remarks": {
+          "required": false,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      },
+      "local": {
+        "remarks": {
+          "required": false,
+          "length": 35,
+          "allowedCharacters": "[a-zA-Z0-9 ]+"
+        }
+      }
+    }
+  }
+}
