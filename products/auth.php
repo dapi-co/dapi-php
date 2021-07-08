@@ -2,10 +2,10 @@
 
 class Auth
 {
-  private $client;
-  function __construct($client)
+  private DapiRequester $client;
+  function __construct(DapiRequester $client)
   {
-    $this->$client = $client;
+    $this->client = $client;
   }
 
   public function exchangeToken($accessCode, $connectionID)

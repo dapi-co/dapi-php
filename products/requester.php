@@ -1,8 +1,6 @@
 <?php
 
-include 'products/auth.php'; 
-include 'products/data.php'; 
-class DapiClient
+class DapiRequester
 {
   private string $appSecret;
   private GuzzleHttp\Client $guzzleClient;
@@ -10,33 +8,12 @@ class DapiClient
   private $DD_HOST;
   private const USER_AGENT = 'Dapi Connect PHP';
 
-  public $auth; 
-  public $data; 
-  public $payment; 
-  public $metadata; 
-  public $operation; 
-
   function __construct($appSecret)
   {
     $this->API_BASE_URL = "https://api.dapi.co/v2";
     $this->DD_HOST = "https://dd.dapi.co";
     $this->appSecret = $appSecret;
     $this->guzzleClient = new GuzzleHttp\Client();
-
-    $this->auth = new Auth($this);
-    $this->data = new Data($this);  
-  }
-
-  public function getAppSecret(){
-    return $this->appSecret; 
-  }
-
-  public function handleSDKRequests()
-  {
-    $body['appSecret'] = $this->appSecret;
-    $headers['host'] = 'dd.dapi.co';
-    $headers['Host'] = 'dd.dapi.co';
-    return $this->makeRequest('', $body, $headers, true);
   }
 
   public function makeAuthenicatedRequest($endpoint, $accessToken, $userSecret, $data)
@@ -49,7 +26,7 @@ class DapiClient
     return $this->makeRequest($endpoint, $data, $headers);
   }
 
-  private function makeRequest($endpoint, $body, $headers, $comingFromSdk = false)
+  public function makeRequest($endpoint, $body, $headers, $comingFromSdk = false)
   {
 
     $headers['User-Agent'] = self::USER_AGENT;
@@ -57,12 +34,12 @@ class DapiClient
 
     $url = '';
     if ($comingFromSdk) {
-      $url = $this->API_BASE_URL . $endpoint;
-    } else {
       $url = $this->DD_HOST;
+    } else {
+      $url = $this->API_BASE_URL . $endpoint;
     }
 
-    $response = $this->guzzleClient->request('POST', $url, ['headers' => $headers, 'body' => json_encode($body)]);
+    $response = $this->guzzleClient->post($url, ['headers' => $headers, 'body' => json_encode($body)]);
     return json_decode($response->getBody(), true);
   }
 }
