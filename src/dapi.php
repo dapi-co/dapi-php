@@ -1,4 +1,7 @@
 <?php
+
+include 'products/auth.php'; 
+include 'products/data.php'; 
 class DapiClient
 {
   private string $appSecret;
@@ -7,12 +10,21 @@ class DapiClient
   private $DD_HOST;
   private const USER_AGENT = 'Dapi Connect PHP';
 
+  public $auth; 
+  public $data; 
+  public $payment; 
+  public $metadata; 
+  public $operation; 
+
   function __construct($appSecret)
   {
     $this->API_BASE_URL = "https://api.dapi.co/v2";
     $this->DD_HOST = "https://dd.dapi.co";
     $this->appSecret = $appSecret;
     $this->guzzleClient = new GuzzleHttp\Client();
+
+    $this->auth = new Auth($this);
+    $this->data = new Data($this);  
   }
 
   public function getAppSecret(){

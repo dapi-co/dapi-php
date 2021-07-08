@@ -14,11 +14,11 @@ class Auth
     $body['accessCode'] = $accessCode;
     $body['connectionID'] = $connectionID;
 
-    return $this->client->makeRequest('auth/ExchangeToken', $body, []);
+    return $this->client->makeRequest('/auth/ExchangeToken', $body, []);
   }
 
   public function delinkUser($accessToken, $userSecret)
   {
-    return $this->client->makeAuthenicatedRequest('users/DelinkUser', $accessToken, $userSecret, []);
+    return $this->client->makeAuthenicatedRequest('/data/DelinkUser', $accessToken, $userSecret, []);
   }
 }
