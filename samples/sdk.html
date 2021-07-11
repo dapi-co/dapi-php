@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      "
+    >
+      <h1>Client Website!!</h1>
+      <button
+        style="
+          height: 2rem;
+          width: 20rem;
+          background: beige;
+          border: 1px solid black;
+          margin-top: 2rem;
+        "
+        onclick="clickMe()"
+      >
+        Quick Transfer
+      </button>
+    </div>
+    <script src="https://cdn.dapi.co/dapi/v2/sdk.js"></script>
+    <script>
+      let connectLoading = true;
+      var ba = null;
+
+      var dapi = Dapi.create({
+        environment: Dapi.environments.sandbox,
+        appKey:
+          "bcbff2a8d909702ea66bc6daeefef0e51bad491f8039fde23357e74d2d000262",
+        countries: ["AE"],
+        bundleID: "com.sadeq.app",
+        clientUserID: "CLIENT_USER_ID",
+        isCachedEnabled: true,
+        isExperimental: false,
+        clientHeaders: {},
+        clientBody: {},
+        onSuccessfulLogin: function (bankAccount) {
+          ba = bankAccount;
+          ba.data
+            .getAccounts()
+            .then((accountsResponse) => {
+              if (accountsResponse.status === "done") {
+                console.dir(accountsResponse);
+              } else {
+                console.error("API Responded with an error");
+                console.dir(accountsResponse);
+              }
+            })
+            .catch((error) => {
+              console.dir(error);
+            });
+        },
+        onFailedLogin: function (err) {
+          if (err != null) {
+            console.log("Error");
+            console.log(err);
+          } else {
+            console.log("No error");
+          }
+        },
+        onReady: function () {
+          connectLoading = false;
+        },
+      });
+      var clickMe = function () {
+        if (!connectLoading) {
+          dapi.open();
+        } else {
+          console.error("Widget is loading. Please wait!");
+        }
+      };
+    </script>
+  </body>
+</html>

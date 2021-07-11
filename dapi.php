@@ -37,7 +37,7 @@ class DapiClient
     return $this->appSecret;
   }
 
-  public function handleSDKRequests()
+  public function handleSDKRequests($body, $headers)
   {
     $body['appSecret'] = $this->appSecret;
     $headers['host'] = 'dd.dapi.co';
