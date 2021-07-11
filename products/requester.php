@@ -16,6 +16,11 @@ class DapiRequester
     $this->guzzleClient = new GuzzleHttp\Client();
   }
 
+  public function getAppSecret()
+  {
+    return $this->appSecret;
+  }
+
   public function makeAuthenicatedRequest($endpoint, $accessToken, $userSecret, $data)
   {
     $data['appSecret'] = $this->appSecret;

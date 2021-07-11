@@ -8,7 +8,7 @@ class Metadata
     $this->client = $client;
   }
 
-  public function getAccounts($accessToken, $userSecret, $userInputs = [], $operationID = "")
+  public function getAccountsMetadata($accessToken, $userSecret, $userInputs = [], $operationID = "")
   {
     $body['userInputs'] = $userInputs;
     $body['operationID'] = $operationID;
