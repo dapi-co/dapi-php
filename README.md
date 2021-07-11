@@ -72,17 +72,17 @@ All the responses have the fields described here. Meaning all the responses desc
 | operationID | `string` | Unique ID generated to identify a specific operation. |
 | success | `boolean` | Returns true if request is successful and false otherwise. |
 | status | `string` | The status of the job. <br><br> `done` - Operation Completed. <br> `failed` - Operation Failed. <br> `user_input_required` - Pending User Input. <br> `initialized` - Operation In Progress. <br><br> For further explanation see [Operation Statuses](https://dapi-api.readme.io/docs/operation-statuses). |
-| userInputs | `array` | Array of `UserInput` objects, that are needed to complete this operation. <br><br> Specifies the type of further information required from the user before the job can be completed. <br><br> Note: It's only returned if operation status is `user_input_required` |
+| userInputs | `array` | Array of `userInput` objects, that are needed to complete this operation. <br><br> Specifies the type of further information required from the user before the job can be completed. <br><br> Note: It's only returned if operation status is `user_input_required` |
 | type | `string` | Type of error encountered. <br><br> Note: It's only returned if operation status is `failed` |
 | msg | `string` | Detailed description of the error. <br><br> Note: It's only returned if operation status is `failed` |
 #### userInput Object
 
 | Parameter | Type                 | Description                                                                                                                                        |
 | --------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Id        | `string` | Type of input required. <br><br> You can read more about user input types on [User Input Types](https://dapi-api.readme.io/docs/user-input-types). |
-| Query     | `string`             | Textual description of what is required from the user side.                                                                                        |
-| Index     | `int`                | Is used in case more than one user input is requested. <br> Will always be 0 If only one input is requested.                                       |
-| Answer    | `string`             | User input that must be submitted. In the response it will always be empty.                                                                        |
+| id        | `string` | Type of input required. <br><br> You can read more about user input types on [User Input Types](https://dapi-api.readme.io/docs/user-input-types). |
+| query     | `string`             | Textual description of what is required from the user side.                                                                                        |
+| index     | `int`                | Is used in case more than one user input is requested. <br> Will always be 0 If only one input is requested.                                       |
+| answer    | `string`             | User input that must be submitted. In the response it will always be empty.                                                                        |
 
 ### Methods
 

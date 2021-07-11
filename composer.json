@@ -4,7 +4,7 @@
   "type": "library",
   "keywords": ["dapi", "dapi-php", "php"],
   "homepage": "https://github.com/dapi-co/dapi-php",
-  "license": "?",
+  "license": "proprietary",
   "require": {
     "php": ">=7.3",
     "guzzlehttp/guzzle": "^7.3"
