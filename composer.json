@@ -1,5 +1,5 @@
 {
-  "name": "dapi/dapi-php",
+  "name": "dapi-co/dapi-php",
   "description": "Dapi Client Library for PHP",
   "type": "library",
   "keywords": ["dapi", "dapi-php", "php"],

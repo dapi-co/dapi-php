@@ -40,4 +40,29 @@ class Data
     $body['toDate'] = $toDate;
     return $this->client->makeAuthenicatedRequest('/data/transactions/get', $accessToken, $userSecret, $body);
   }
+
+  public function getCards($accessToken, $userSecret, $userInputs = [], $operationID = "")
+  {
+    $body['userInputs'] = $userInputs;
+    $body['operationID'] = $operationID;
+    return $this->client->makeAuthenicatedRequest('/data/cards/get', $accessToken, $userSecret, $body);
+  }
+
+  public function getCardBalance($accessToken, $userSecret, $cardID, $userInputs = [], $operationID = "")
+  {
+    $body['userInputs'] = $userInputs;
+    $body['operationID'] = $operationID;
+    $body['cardID'] = $cardID;
+    return $this->client->makeAuthenicatedRequest('/data/balance/get', $accessToken, $userSecret, $body);
+  }
+
+  public function getCardTransactions($accessToken, $userSecret, $cardID, $fromDate, $toDate, $userInputs = [], $operationID = "")
+  {
+    $body['userInputs'] = $userInputs;
+    $body['operationID'] = $operationID;
+    $body['accountID'] = $cardID;
+    $body['fromDate'] = $fromDate;
+    $body['toDate'] = $toDate;
+    return $this->client->makeAuthenicatedRequest('/data/transactions/get', $accessToken, $userSecret, $body);
+  }
 }
