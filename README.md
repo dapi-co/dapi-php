@@ -8,10 +8,16 @@ A PHP library that talks to the [Dapi](https://dapi.co) [API](https://api.dapi.c
 
 First add the library module to your project using composer. Add the following in your `composer.json`
 
-```
+```json
 "require": {
-    "dapi-co/dapi-php": "1.0.0",
+    "dapi-co/dapi-php": "^1.0",
 },
+```
+
+OR simply type this in your project folder. 
+
+```bash
+composer require dapi-co/dapi-php
 ```
 
 ### Configure Library
@@ -19,8 +25,8 @@ First add the library module to your project using composer. Add the following i
 1. Create a DapiClient with your App Secret. 
 
 ```php
-
-$dapiClient = new DapiPhp\DapiClient('APP_SECRET');
+// Assuming that Dapi library is already autoloaded. If not, manually include/require it here.
+$dapiClient = new Dapi\DapiClient('APP_SECRET');
 ```
 
 2. Now you can use any of the functions of the products available on the client (`data` for example) instance to call Dapi with your `appSecret`.
@@ -47,7 +53,7 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 // Initialize DapiClient with your appSecret here
-$dapiClient = new DapiClient('APP_SECRET');
+$dapiClient = new Dapi\DapiClient('APP_SECRET');
 
 $headers = getallheaders();
 $body = json_decode(file_get_contents("php://input"), true);
@@ -60,6 +66,48 @@ if (!empty($body)) {
   echo "Bad Request: No data sent or wrong request";
 }
 ```
+
+
+## DAPI API
+
+A list of all options on Dapi's PHP Library that your **backend** can call to perform some operations.
+
+- _Auth Product:_
+
+  `auth->exchangeToken`
+
+- _Data Product:_
+
+  `data->getIdentity`
+
+  `data->getAccounts`
+
+  `data->getAccountBalance`
+
+  `data->getAccountTransactions`
+
+  `data->getCards`
+
+  `data->getCardBalance`
+
+  `data->getCardTransactions`
+
+- _Payment Product:_
+
+  `payment->getBeneficiaries`
+
+  `payment->createBeneficiary`
+
+  `payment->createTransfer`
+
+  `payment->transferAutoFlow`
+
+- _Metadata Product:_
+
+  `metadata->getAccounts`
+
+- _Operation Product:_
+  `operation->getOperationStatus`
 
 ## Reference
 
