@@ -1,5 +1,7 @@
 <?php
 
+namespace Dapi\Products; 
+use GuzzleHttp; 
 class DapiRequester
 {
   private string $appSecret;

@@ -1,5 +1,7 @@
 <?php
 
+namespace Dapi\Products; 
+
 class Data
 {
 

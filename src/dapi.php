@@ -1,13 +1,16 @@
 <?php
 
-include_once 'products/auth.php';
-include_once 'products/data.php';
-include_once 'products/metadata.php';
-include_once 'products/operation.php';
-include_once 'products/payment.php';
-include_once 'products/requester.php';
+namespace Dapi; 
 
-require_once __DIR__ . '/vendor/autoload.php';
+use Dapi\Products\Auth; 
+use Dapi\Products\Data;
+use Dapi\Products\Metadata;
+use Dapi\Products\Operation;
+use Dapi\Products\Payment;  
+  
+use Dapi\Products\DapiRequester; 
+
+require_once 'vendor/autoload.php';
 class DapiClient
 {
   private string $appSecret;

@@ -1,5 +1,6 @@
 <?php
 
+namespace Dapi\Products; 
 class Auth
 {
   private DapiRequester $client;

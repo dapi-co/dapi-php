@@ -1,5 +1,7 @@
 <?php
 
+namespace Dapi\Products; 
+
 class Operation
 {
   private DapiRequester $client;

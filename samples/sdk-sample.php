@@ -1,5 +1,6 @@
 <?php
-include_once 'dapi.php';
+
+use Dapi; 
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -8,7 +9,7 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 // Initialize Dapi-Client with your appSecret here
-$dapiClient = new DapiClient('APP_SECRET');
+$dapiClient = new Dapi\DapiClient('APP_SECRET');
 
 $headers = getallheaders();
 $body = json_decode(file_get_contents("php://input"), true);
