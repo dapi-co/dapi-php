@@ -2,13 +2,18 @@
   "name": "dapi-co/dapi-php",
   "description": "Dapi Client Library for PHP",
   "type": "library",
-  "keywords": ["dapi", "dapi-php", "php"],
+  "keywords": [
+    "dapi",
+    "dapi-php",
+    "php"
+  ],
   "homepage": "https://github.com/dapi-co/dapi-php",
   "license": "proprietary",
   "require": {
     "php": ">=7.3",
     "guzzlehttp/guzzle": "^7.3"
   },
+  "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
       "Dapi\\DapiPhp\\": "/"
