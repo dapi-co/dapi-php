@@ -43,8 +43,8 @@ class DapiClient
   public function handleSDKRequests($body, $headers)
   {
     $body['appSecret'] = $this->appSecret;
-    $headers['host'] = 'dd.dapi.co';
-    $headers['Host'] = 'dd.dapi.co';
+    $headers['host'] = 'dd.dapi.com';
+    $headers['Host'] = 'dd.dapi.com';
     return $this->requester->makeRequest('', $body, $headers, true);
   }
 }

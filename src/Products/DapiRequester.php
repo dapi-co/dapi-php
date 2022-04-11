@@ -12,8 +12,8 @@ class DapiRequester
 
   function __construct($appSecret)
   {
-    $this->API_BASE_URL = "https://api.dapi.co/v2";
-    $this->DD_HOST = "https://dd.dapi.co";
+    $this->API_BASE_URL = "https://api.dapi.com/v2";
+    $this->DD_HOST = "https://dd.dapi.com";
     $this->appSecret = $appSecret;
     $this->guzzleClient = new GuzzleHttp\Client();
   }
