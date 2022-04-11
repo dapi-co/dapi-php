@@ -10,7 +10,7 @@ First add the library module to your project using composer. Add the following i
 
 ```json
 "require": {
-    "dapi-co/dapi-php": "^1.0",
+    "dapi-co/dapi-php": "^1.1",
 },
 ```
 
