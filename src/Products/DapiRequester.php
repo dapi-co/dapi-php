@@ -15,7 +15,7 @@ class DapiRequester
     $this->API_BASE_URL = "https://api.dapi.com/v2";
     $this->DD_HOST = "https://dd.dapi.com";
     $this->appSecret = $appSecret;
-    $this->guzzleClient = new GuzzleHttp\Client();
+    $this->guzzleClient = new GuzzleHttp\Client(['timeout' => 300]);
   }
 
   public function getAppSecret()
