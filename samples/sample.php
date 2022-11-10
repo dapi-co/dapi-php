@@ -25,6 +25,14 @@ $transactions = $dapiClient->data->getTransactions($accessToken, $userSecret, $a
 echo PHP_EOL . 'Transactions!' . PHP_EOL . PHP_EOL;
 echo (json_encode($transactions, JSON_PRETTY_PRINT));
 
+$categorizedTransactions = $dapiClient->data->getCategorizedTransactions($accessToken, $userSecret, $accountID, "2021-02-14", "2021-05-11"); 
+echo PHP_EOL . 'Categorized Transactions!' . PHP_EOL . PHP_EOL;
+echo (json_encode($categorizedTransactions, JSON_PRETTY_PRINT));
+
+$enrichedTransactions = $dapiClient->data->getEnrichedTransactions($accessToken, $userSecret, $accountID, "2021-02-14", "2021-05-11"); 
+echo PHP_EOL . 'Enriched Transactions!' . PHP_EOL . PHP_EOL;
+echo (json_encode($enrichedTransactions, JSON_PRETTY_PRINT));
+
 $metadata = $dapiClient->metadata->getAccountsMetadata($accessToken, $userSecret); 
 echo PHP_EOL . 'Accounts Metadata!' . PHP_EOL . PHP_EOL;
 echo (json_encode($transactions, JSON_PRETTY_PRINT));
