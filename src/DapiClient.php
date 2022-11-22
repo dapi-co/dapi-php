@@ -10,7 +10,6 @@ use Dapi\Products\Payment;
   
 use Dapi\Products\DapiRequester; 
 
-require_once 'vendor/autoload.php';
 class DapiClient
 {
   private string $appSecret;
