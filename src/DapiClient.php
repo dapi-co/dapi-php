@@ -21,6 +21,7 @@ class DapiClient
   public $payment;
   public $metadata;
   public $operation;
+  public $ach;
 
   function __construct($appSecret)
   {
@@ -32,6 +33,7 @@ class DapiClient
     $this->metadata = new Metadata($this->requester);
     $this->operation = new Operation($this->requester);
     $this->payment = new Payment($this->requester);
+    $this->ach = new ACH($this->requester);
   }
 
   public function getAppSecret()
