@@ -10,11 +10,11 @@ class ACH
     $this->client = $client;
   }
 
-  public function createPull($accessToken, $userSecret, $userInputs = [], $operationID = "")
+  public function createPull($accessToken, $userSecret, $transferData, $userInputs = [], $operationID = "")
   {
-    $body['userInputs'] = $userInputs;
-    $body['operationID'] = $operationID;
-    return $this->client->makeAuthenicatedRequest('/ach/pull/create', $accessToken, $userSecret, $body);
+    $transferData['userInputs'] = $userInputs;
+    $transferData['operationID'] = $operationID;
+    return $this->client->makeAuthenicatedRequest('/ach/pull/create', $accessToken, $userSecret, $transferData);
   }
 
 }
