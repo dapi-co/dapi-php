@@ -17,4 +17,10 @@ class ACH
     return $this->client->makeAuthenicatedRequest('/ach/pull/create', $accessToken, $userSecret, $transferData);
   }
 
+  public function getPull($accessToken, $userSecret, $userInputs = [], $operationID = "")
+  {
+    $body['userInputs'] = $userInputs;
+    $body['operationID'] = $operationID;
+    return $this->client->makeAuthenicatedRequest('/ach/pull/get', $accessToken, $userSecret, $body);
+  }
 }
